@@ -26,7 +26,7 @@ function render(currentIndex) {
     individualContainer.appendChild(chart_container);
     chartsContainer.appendChild(individualContainer);
     (!dataSource.chart) && (dataSource.chart = {});
-    dataSource.chart.animation = 0;
+    //dataSource.chart.animation = 0;
     instances[currentIndex] = new FusionCharts({
         type: chartType,
         renderAt: chart_container,
