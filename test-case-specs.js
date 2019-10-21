@@ -99,7 +99,7 @@ var chartSpec = {
         "options": {
             "type": "mscolumn2d",
             "width": "500",
-            "height": "300",
+            "height": "500",
             "dataFormat": "json",
             "dataSource" : {
                 "chart": {
@@ -198,14 +198,14 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
         "options": {
             "type": "mscolumn2d",
             "width": "500",
-            "height": "300",
+            "height": "500",
             "dataFormat": "json",
             "dataSource" : {
                 "chart": {
                     "caption": "Comparison of Quarterly Revenue",
                     "captionAlignment":"right",
                     "captionfontcolor": "#00ff00",
-                    //"captionfont":"Ariel",
+                    //"captionfont":"Arial",
                     // "captionFontsize":72,
                     // "captionOntop":0,
                     "aligncaptionwithcanvas":1,
@@ -382,8 +382,8 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                     "xAxisname": "Quarter",
                     "yAxisName": "Revenues (In USD)",
                     "numberPrefix": "$",
-                    "xaxisnameFont":"Ariel",
-                    "yaxisnamefont":"Ariel",
+                    "xaxisnameFont":"Arial",
+                    "yaxisnamefont":"Arial",
                     "xaxisnamefontcolor":"#ff0000",
                     "yaxisnamefontcolor":"#00ff00",
                     "xaxisnamefontsize":"12",
@@ -682,7 +682,7 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                         ]
                     },
                     {
-                         font : "Ariel",
+                         font : "Arial",
                          fontColor : "#345123",
                          fontSize : "12",
                     }
@@ -737,7 +737,7 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                     "yAxisName": "Revenues (In USD)",
                     "numberPrefix": "$",
                     "showborder":1,
-                    valueFont : "Ariel",
+                    valueFont : "Arial",
                     valueFontColor : "#3777ff",
                     valueFontSize : "10",
                     valueFontItalic : 1,
@@ -754,7 +754,7 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                     valueBorderDashLen : 5,
                     valueBorderDashGap : 8,
                     textOutline : 1,
-                    yAxisValueFont : "Ariel",
+                    yAxisValueFont : "Arial",
                     yAxisValueFontColor : "#00ff00",
                     yAxisValueFontSize : "10",
                     yAxisValueFontBold : 1,
@@ -848,14 +848,14 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                     "showborder":1,
                     showLegend : 1,
                     legendItemFontBold : 1,
-                    legendItemFont : "Ariel",
+                    legendItemFont : "Arial",
                     legendItemFontSize : "15",
                     legendItemFontColor : "#fff000,#ff00ff",
                     legendCaption : "Legend",
                     legendItemHoverFontColor :"#678912",
                     legendCaptionAlignment : "right",
                     legendCaptionFontBold : 1,
-                    legendCaptionFont : "Ariel",
+                    legendCaptionFont : "Arial",
                     legendCaptionFontSize : "6",
                     legendCaptionFontColor : "#0fff00",
                     legendIconScale : "2",
@@ -903,10 +903,10 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                     decimals : 2,
                     forceDecimals : 1,
 
-                    baseFont : "Ariel",
+                    baseFont : "Arial",
                     baseFontSize :  "14",
                     baseFontColor : "#000000",
-                    outCnvBaseFont : "Ariel",
+                    outCnvBaseFont : "Arial",
                     outCnvBaseFontSize : 10,
                     outCnvBaseFontColor : "#37733f",
 
@@ -986,7 +986,7 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                     "yAxisName": "Revenues (In USD)",
                     "numberPrefix": "$",
                     //Data Label 
-                    labelFont : "Ariel",
+                    labelFont : "Arial",
                     labelFontColor : "#645093",
                     labelFontSize : "15",
                     labelFontBold : 1,
@@ -1040,7 +1040,7 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                     exportEnabled : 1,
                     exportAction : "download",
                     //exportHandler : "",some script not clear
-                    exportFormats : "PNG=Export as High Quality Image&#124;JPG&#124;PDF=Export as PDF File",
+                    //exportFormats : "PNG=Export as High Quality Image&#124;JPG&#124;PDF=Export as PDF File",
                    // exportMode : "", not clear
                     exportShowMenuItem : "1",
                     exportTargetWindow : "_blank",//similar to css target in <a> tag 
@@ -1139,7 +1139,7 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                                 label : "Question1",
                                 showLabel : 1,
                                 toolText : "tooltext of Qustion1",
-                                font : "Ariel",
+                                font : "Arial",
                                 fontColor : "#377ff0",
                                 fontSize : "8",
                                 fontBold : 1,
@@ -1229,7 +1229,7 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
     },
     "test_12": {
         "id": "test_12",
-        "description": " chart's trend Line Cosmetic and data attributes",
+        "description": " chart's trend zone and Cosmetic and data attributes",
         "options": {
             "type": "mscolumn2d",
             "width": "500",
@@ -1246,7 +1246,152 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                     trendlineAlpha : "50",
                     trendLineToolText : "trend line",
                     showTrendlinesOnTop : 1,
-                    trendValueFont : "Ariel",
+                    trendValueFont : "Arial",
+                    trendValueFontSize : 10,
+                    trendValueFontBold : 1,
+                    trendValueFontItalic : 0,
+                    trendValueBgColor : "#376980",
+                    trendValueBorderColor : "#000000",
+                    trendValueAlpha : "50",
+                    trendValueBgAlpha :"30",
+                    trendValueBorderAlpha : "40",
+                    trendValueBorderPadding : "10",
+                    trendValueBorderRadius : 5,
+                    trendValueBorderThickness : 2,
+                    trendValueBorderDashed : 1,
+                    trendValueBorderDashLen : 5,
+                    trendValueBorderDashGap : 5,
+                
+                 },
+                "categories": [
+                    {
+                        "category": [
+                            {
+                                label:"Question1"
+                            
+                            },
+                           
+                            {
+                                "label": "Question2"
+                            },
+                            {
+                                "label": "Question3"
+                            },
+                            {
+                                "label": "Question4"
+                            },
+                            
+
+                        ]
+                    }
+                ],
+                "dataset": [
+                    {
+                        "seriesname": "Previous Year",
+                        "data": [
+                            {
+                                alpha : "50",
+                                color : "#ff00ff",
+                                dashed : "",
+                                displayValue : "data1",
+                                link : "https://google.com",
+                                showValue : 1,
+                                valueFontColor : "#f34534",
+                                valueBgColor : "#dddddd",
+                                valueBorderColor : "#000000",
+                                value : -20050,
+                                toolText : "Data $value",
+                                
+                                hoverColor : "#ff00ff",
+                                hoverAlpha : "50",
+                                hoverGradientColor : "#349809,#ff3902,#0f0f0f",
+                                hoverRatio : "30,60,10",
+                                hoverAngle :"40",
+                                borderHoverColor : "#377909",
+                                borderHoverAlpha : "50",
+                                borderHoverThickness : 10,
+                                borderHoverDashed : 1,
+                                borderHoverDashLen : 5,
+                                borderHoverDashGap : 5,
+                        
+                            },
+                            {
+                                "value": "11500"
+                            },
+                            {
+                                "value": "12500"
+                            },
+                            {
+                                "value": "15000"
+                            }
+                        ]
+                    },
+                    {
+                        "seriesname": "Current Year",
+                        "data": [
+                            {
+                                "value": "25400"
+                            },
+                            {
+                                "value": "29800"
+                            },
+                            {
+                                "value": "21800"
+                            },
+                            {
+                                "value": "26800"
+                            },
+                            
+                           
+                        ],
+                       
+                    }
+                ],
+                "trendlines" : [
+                {
+                    "line" :[{        
+                        startValue : 10000,
+                        endValue : 5000,
+                        displayValue : "line",
+                        color : "#3ff099",
+                        isTrendZone : 1,
+                        showOnTop : 1,
+                        thickness : "5",
+                        alpha : 20,
+                        dashed : 1,
+                        dashLen : 3,
+                        dashGap : 4,
+                        valueOnRight : 1,
+                        toolText : "trendLine"
+                    
+                    }]
+                }
+                ]
+
+            }
+            
+        }
+    },
+    "test_13": {
+        "id": "test_13",
+        "description": " chart's trend Line Cosmetic and data attributes",
+        "options": {
+            "type": "mscolumn2d",
+            "width": "500",
+            "height": "500",
+            "dataFormat": "json",
+            "dataSource" : {
+                "chart": {
+                    "caption": "Comparison of Quarterly Revenue",
+                    "xAxisname": "Quarter",
+                    "yAxisName": "Revenues (In USD)",
+                    "numberPrefix": "$",
+                    trendlineColor : "#ff9836",
+                    trendlineThickness : "10",
+                    trendlineAlpha : "50",
+                    trendLineToolText : "trend zone",
+                    showTrendlinesOnTop : 1,
+                    trendValueFont : "Arial",
                     trendValueFontSize : 10,
                     trendValueFontBold : 1,
                     trendValueFontItalic : 0,
@@ -1350,11 +1495,11 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                 "trendlines" : [
                 {
                     "line" :[{        
-                        startValue : 10000,
-                        endValue : 5000,
+                        startValue : 9900,
+                        endValue : 1000,
                         displayValue : "line",
                         color : "#3ff099",
-                        isTrendZone : 1,
+                        
                         showOnTop : 1,
                         thickness : "5",
                         alpha : 20,
@@ -1372,13 +1517,13 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
             
         }
     },
-    "test_13": {
-        "id": "test_13",
+    "test_14": {
+        "id": "test_14",
         "description": "Dataset Object",
         "options": {
             "type": "mscolumn2d",
             "width": "500",
-            "height": "300",
+            "height": "500",
             "dataFormat": "json",
             "dataSource" : {
                 "chart": {
