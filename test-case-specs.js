@@ -885,7 +885,7 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
 
 
                     formatNumber : 1,
-                    formatNumberScale : 1,
+                    formatNumberScale : 0,
                     //defaultNumberScale : ,
                     //numberScaleUnit : ,
                     //numberScaleValue : "thousand",
@@ -894,12 +894,12 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                     maxScaleRecursion : "2000",
                     scaleSeparator : "_",
                     numberPrefix : "$",
-                    numberSuffix : "Only",
-                    decimalSeparator : "hi",
-                    thousandSeparator : ",",
+                    //numberSuffix : "Only",
+                    decimalSeparator : "*",
+                    thousandSeparator : "..",
                     thousandSeparatorPosition :"2,3",
-                    inDecimalSeparator : "/",
-                    inThousandSeparator : "*",
+                    //inDecimalSeparator : "/", not working
+                    //inThousandSeparator : "*",
                     decimals : 2,
                     forceDecimals : 1,
 
@@ -1120,14 +1120,15 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                     "yAxisName": "Revenues (In USD)",
                     "numberPrefix": "$",
                     // //cross line
-                    drawCrossLine : 1,
-                    crossLineColor:"#ff00ff",
-                    crossLineAlpha : 50,
-                    crossLineAnimation :1,
-                    crossLineAnimationDuration : 0.25,
-                    plotColorinTooltip : 1,
-                    tooltipGrayoutColor : "#f34090",
-                    drawCrossLineOnTop : 1,
+                    drawCrossLine : 0,
+                    // crossLineColor:"#ff00ff",
+                    // crossLineAlpha : 50,
+                    // crossLineAnimation :1,
+                    // crossLineAnimationDuration : 0.25,
+                    // plotColorinTooltip : 1,
+                    // tooltipGrayoutColor : "#f34090",
+                    // drawCrossLineOnTop : 1,
+                    rotateVlineLabels:1,
                 
                  },
                 "categories": [
@@ -1166,10 +1167,10 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                                 dashGap : 2,
                                 label : "tough Questions",
                                 showLabelBorder : 1,
-                                //linePosition : 1,//why position
-                                //labelPosition : 1,//not clear
-                                //labelHAlign : "right",
-                                //labelVAlign : "top",
+                                linePosition : 0.5,
+                                labelPosition : 0.4,
+                                labelHAlign : "right",
+                                labelVAlign : "bottom",
                             },
                             {
                                 "label": "Question2"
@@ -1306,7 +1307,7 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                                 hoverGradientColor : "#349809,#ff3902,#0f0f0f",
                                 hoverRatio : "30,60,10",
                                 hoverAngle :"40",
-                                borderHoverColor : "#000000",
+                                borderHoverColor : "#377909",
                                 borderHoverAlpha : "50",
                                 borderHoverThickness : 10,
                                 borderHoverDashed : 1,
@@ -1340,27 +1341,32 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                             {
                                 "value": "26800"
                             },
+                            
                            
                         ],
-                        line :{
-                            
-                            startValue : 20000,
-                            endValue : 0,
-                            displayValue : "line",
-                            color : "#3ff099",
-                            isTrendZone : 1,
-                            showOnTop : 1,
-                            thickness : "5",
-                            alpha : 20,
-                            dashed : 1,
-                            dashLen : 3,
-                            dashGap : 4,
-                            valueOnRight : 1,
-                            toolText : "trendLine"
-                            
-                        }
+                       
                     }
                 ],
+                "trendlines" : [
+                {
+                    "line" :[{        
+                        startValue : 10000,
+                        endValue : 5000,
+                        displayValue : "line",
+                        color : "#3ff099",
+                        isTrendZone : 1,
+                        showOnTop : 1,
+                        thickness : "5",
+                        alpha : 20,
+                        dashed : 1,
+                        dashLen : 3,
+                        dashGap : 4,
+                        valueOnRight : 1,
+                        toolText : "trendLine"
+                    
+                    }]
+                }
+                ]
 
             }
             
@@ -1407,28 +1413,28 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
                 "dataset": [
                     {
                         // dataset 
-                //     alpha : String [+]
-                //     color : Color [+]
-                //     dashed : Boolean [+]
-                //     includeInLegend : Boolean [+]
-                //     ratio : String [+]
-                //     seriesName : String [+]
-                //     showValues : Boolean [+]
-                //     valueFontColor : Color [+] 3.14.1
-                //     valueBgColor : Color [+] 3.14.1
-                //     valueBorderColor : Color [+] 3.14.1
-                //     visible : Boolean [+] 3.10.0
-                //     hoverColor : Color [+]
-                //     hoverAlpha : Number [+]
-                //     hoverGradientColor : Color [+]
-                //     hoverRatio : Number [+]
-                //     hoverAngle : Number [+]
-                //     borderHoverColor : Color [+]
-                //     borderHoverAlpha : Number [+]
-                //     borderHoverThickness : Number [+]
-                //     borderHoverDashed : Boolean [+]
-                //     borderHoverDashLen : Number [+]
-                //     borderHoverDashGap : Number [+]
+                        alpha : "50",
+                        color : "#ff00ff",
+                        dashed : "1",
+                        includeInLegend : 1,
+                       // ratio : 
+                        
+                        showValues : 1,
+                        valueFontColor : "#ff00ff",
+                        valueBgColor : "#dddddd",
+                        valueBorderColor : "#000000",
+                        visible :1,
+                        hoverColor : "#00ffff",
+                        hoverAlpha : "50",
+                       // hoverGradientColor : "#d63545",
+                        //hoverRatio : 
+                        //hoverAngle : Number [+]
+                        borderHoverColor : "#d96363",
+                        borderHoverAlpha : "30",
+                        borderHoverThickness :10,
+                        borderHoverDashed : 1,
+                        borderHoverDashLen : 5,
+                        borderHoverDashGap : 3,
                 //     
 
                         "seriesname": "Previous Year",
